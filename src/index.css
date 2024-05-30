@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;800&display=swap');
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/* header  */
+
+header {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.header-input {
+  width: 1000px;
+  height: 50px;
+  font-family: 'Maven Pro';
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.header-input::placeholder {
+  font-family: 'Maven Pro';
+  font-weight: 800;
+  font-size: 28px;
+  text-align: center;
+  color: black;
+}
+
+/* articles section  */
+
+.articles {
+  margin-top: 40px;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.record {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  margin-left: 10px;
+  margin-top: 10px;
+  font-family: 'Maven Pro';
+  font-weight: 500;
+  padding-left: 5px;
+}
+
+.mt {
+  margin-top: 40px;
+}
+
+/* new york times articles section  */
+
+.articles-nytimes {
+  margin-top: 40px;
+}
+
+.nytimes-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.nytimes-height {
+  height: 300px;
+}
+
+/* news api org articles section  */
+
+.articles-newsorg {
+  margin-top: 40px;
+}
+
+.newsorg-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+/* personalized news api org articles section  */
+
+.personalized {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.personalized-h1 {
+  font-family: 'Maven Pro';
+  font-weight: 800;
+  font-size: 30px;
+  text-align: center;
+}
+
+.personalized-buttons {
+  margin-top: 40px;
+}
+
+.personalized-button {
+  width: 200px;
+  height: 50px;
+  padding: 0;
+  border: none;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  margin-left: 40px;
+  margin-top: 10px;
+  font-family: 'Maven Pro';
+  font-weight: 500;
+}
+
+.personalized-height {
+  height: 250px;
+}
+
+@media only screen and (max-width: 390px) {
+  .header-input {
+    width: 300px;
+  }
+
+  .header-input::placeholder {
+    font-size: 14px;
+  }
+
+  .wrapper {
+    justify-content: center;
+  }
+
+  .personalized-h1 {
+    font-size: 15px;
+  }
+
+  .personalized-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .personalized-button {
+    margin-left: 10px;
+  }
+}
